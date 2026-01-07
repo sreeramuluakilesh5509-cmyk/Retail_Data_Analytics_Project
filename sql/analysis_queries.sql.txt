@@ -1,0 +1,21 @@
+-- Total Revenue
+SELECT SUM(Revenue) AS total_revenue FROM retail;
+
+-- Total Customers
+SELECT COUNT(DISTINCT CustomerID) AS total_customers FROM retail;
+
+-- Total Orders
+SELECT COUNT(DISTINCT InvoiceNo) AS total_orders FROM retail;
+
+-- Revenue by Country
+SELECT Country, SUM(Revenue) AS revenue
+FROM retail
+GROUP BY Country
+ORDER BY revenue DESC
+LIMIT 10;
+
+-- Monthly Revenue Trend
+SELECT Year, Month, SUM(Revenue) AS monthly_revenue
+FROM retail
+GROUP BY Year, Month
+ORDER BY Year, Month;
