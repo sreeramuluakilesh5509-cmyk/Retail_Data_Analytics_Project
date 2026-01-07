@@ -1,0 +1,3 @@
+-- Data loaded into MySQL using Python CSV export
+-- Source: cleaned_data.csv
+-- Loading handled via MySQL Workbench import wizard
