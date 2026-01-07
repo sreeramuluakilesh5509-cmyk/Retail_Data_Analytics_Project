@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS retail_db;
+USE retail_db;
+
+CREATE TABLE retail (
+    InvoiceNo VARCHAR(20),
+    StockCode VARCHAR(20),
+    Description TEXT,
+    Quantity INT,
+    InvoiceDate DATETIME,
+    UnitPrice DECIMAL(10,2),
+    CustomerID INT,
+    Country VARCHAR(50),
+    Year INT,
+    Month INT,
+    Revenue DECIMAL(12,2)
+);
